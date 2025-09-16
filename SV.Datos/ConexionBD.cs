@@ -10,7 +10,7 @@ namespace SV.Datos
     public class ConexionBD
     {
         private readonly string cadenaConexion =
-            "Server=DESKTOP-9SMDLH8;Database=VinculacionBDD;Integrated Security=true;";
+            "Server=tcp:uteqvinculacion.database.windows.net,1433;Database=BDVinculacionUTEQ;Persist Security Info=False;User ID=advinculacion;Password=software2025!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
         public SqlConnection ObtenerConexion()
         {
