@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,11 +52,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formsCoordinador\frmDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCoordinador\frmDocentes.Designer.cs">
+      <DependentUpon>frmDocentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsCoordinador\frmDocumentacionCoordinador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCoordinador\frmDocumentacionCoordinador.Designer.cs">
+      <DependentUpon>frmDocumentacionCoordinador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsCoordinador\frmEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCoordinador\frmEstudiantes.Designer.cs">
+      <DependentUpon>frmEstudiantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="formsCoordinador\frmMenuCoordinador.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formsCoordinador\frmMenuCoordinador.Designer.cs">
       <DependentUpon>frmMenuCoordinador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsCoordinador\FrmProyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCoordinador\FrmProyectos.Designer.cs">
+      <DependentUpon>FrmProyectos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsCoordinador\frmReporteCoodinador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCoordinador\frmReporteCoodinador.Designer.cs">
+      <DependentUpon>frmReporteCoodinador.cs</DependentUpon>
     </Compile>
     <Compile Include="formsDirector\frmMenuDirector.cs">
       <SubType>Form</SubType>
@@ -78,8 +114,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formsCoordinador\frmDocentes.resx">
+      <DependentUpon>frmDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsCoordinador\frmDocumentacionCoordinador.resx">
+      <DependentUpon>frmDocumentacionCoordinador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsCoordinador\frmEstudiantes.resx">
+      <DependentUpon>frmEstudiantes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsCoordinador\frmMenuCoordinador.resx">
       <DependentUpon>frmMenuCoordinador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsCoordinador\FrmProyectos.resx">
+      <DependentUpon>FrmProyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsCoordinador\frmReporteCoodinador.resx">
+      <DependentUpon>frmReporteCoodinador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsDirector\frmMenuDirector.resx">
       <DependentUpon>frmMenuDirector.cs</DependentUpon>
@@ -102,6 +153,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
