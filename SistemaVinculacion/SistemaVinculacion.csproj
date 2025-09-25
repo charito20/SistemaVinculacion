@@ -82,6 +82,12 @@
     <Compile Include="formsDirector\Proyectos\frmAsignarProyecto.Designer.cs">
       <DependentUpon>frmAsignarProyecto.cs</DependentUpon>
     </Compile>
+    <Compile Include="formsDirector\Reportes\frmGenerarReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsDirector\Reportes\frmGenerarReportes.Designer.cs">
+      <DependentUpon>frmGenerarReportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="formsEstudiantes\frmMenuEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsDirector\Proyectos\frmAsignarProyecto.resx">
       <DependentUpon>frmAsignarProyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsDirector\Reportes\frmGenerarReportes.resx">
+      <DependentUpon>frmGenerarReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsEstudiantes\frmMenuEstudiante.resx">
       <DependentUpon>frmMenuEstudiante.cs</DependentUpon>

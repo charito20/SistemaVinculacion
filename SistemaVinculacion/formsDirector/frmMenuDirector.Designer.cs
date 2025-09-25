@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuDirector));
             this.tsMenuDirector = new System.Windows.Forms.ToolStrip();
+            this.tslblNombre = new System.Windows.Forms.ToolStripLabel();
             this.tsbtnCerrarSesion = new System.Windows.Forms.ToolStripButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -43,7 +44,6 @@
             this.btnDocentes = new System.Windows.Forms.Button();
             this.btnProyectos = new System.Windows.Forms.Button();
             this.btnConvenios = new System.Windows.Forms.Button();
-            this.tslblNombre = new System.Windows.Forms.ToolStripLabel();
             this.tsMenuDirector.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -65,6 +65,12 @@
             this.tsMenuDirector.Size = new System.Drawing.Size(800, 27);
             this.tsMenuDirector.TabIndex = 66;
             this.tsMenuDirector.Text = "toolStrip1";
+            // 
+            // tslblNombre
+            // 
+            this.tslblNombre.Name = "tslblNombre";
+            this.tslblNombre.Size = new System.Drawing.Size(51, 24);
+            this.tslblNombre.Text = "Nombre";
             // 
             // tsbtnCerrarSesion
             // 
@@ -201,12 +207,7 @@
             this.btnConvenios.TabIndex = 67;
             this.btnConvenios.Text = "Convenios";
             this.btnConvenios.UseVisualStyleBackColor = false;
-            // 
-            // tslblNombre
-            // 
-            this.tslblNombre.Name = "tslblNombre";
-            this.tslblNombre.Size = new System.Drawing.Size(51, 24);
-            this.tslblNombre.Text = "Nombre";
+            this.btnConvenios.Click += new System.EventHandler(this.btnConvenios_Click);
             // 
             // frmMenuDirector
             // 

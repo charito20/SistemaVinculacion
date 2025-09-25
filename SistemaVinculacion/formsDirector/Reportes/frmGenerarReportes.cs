@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SistemaVinculacion.formsDirector.Convenios
+namespace SistemaVinculacion.formsDirector.Reportes
 {
-    public partial class frmRegistrarConvenio : Form
+    public partial class frmGenerarReportes : Form
     {
-        public frmRegistrarConvenio(SV.Entidades.Usuario usuarioLogueado)
+        public frmGenerarReportes()
         {
             InitializeComponent();
         }

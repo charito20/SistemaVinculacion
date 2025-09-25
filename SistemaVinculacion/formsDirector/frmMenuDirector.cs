@@ -1,4 +1,5 @@
-﻿using SV.Entidades;
+﻿using SistemaVinculacion.formsDirector.Convenios;
+using SV.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,6 +27,14 @@ namespace SistemaVinculacion.formsDirector
             this.Hide();
             frmLogin login = new frmLogin();
             login.Show();
+        }
+
+        private void btnConvenios_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmRegistrarConvenio registroConvenios = new frmRegistrarConvenio(usuarioLogueado);
+            registroConvenios.ShowDialog();
+            this.Show();
         }
     }
 }
