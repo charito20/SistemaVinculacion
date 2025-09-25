@@ -52,11 +52,35 @@
     <Compile Include="formsCoordinador\frmMenuCoordinador.Designer.cs">
       <DependentUpon>frmMenuCoordinador.cs</DependentUpon>
     </Compile>
+    <Compile Include="formsDirector\Convenios\frmEditarConvenioExistente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsDirector\Convenios\frmEditarConvenioExistente.Designer.cs">
+      <DependentUpon>frmEditarConvenioExistente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsDirector\Convenios\frmGestionarConvenios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsDirector\Convenios\frmGestionarConvenios.Designer.cs">
+      <DependentUpon>frmGestionarConvenios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsDirector\Convenios\frmRegistrarConvenio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsDirector\Convenios\frmRegistrarConvenio.Designer.cs">
+      <DependentUpon>frmRegistrarConvenio.cs</DependentUpon>
+    </Compile>
     <Compile Include="formsDirector\frmMenuDirector.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formsDirector\frmMenuDirector.Designer.cs">
       <DependentUpon>frmMenuDirector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsDirector\Proyectos\frmAsignarProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsDirector\Proyectos\frmAsignarProyecto.Designer.cs">
+      <DependentUpon>frmAsignarProyecto.cs</DependentUpon>
     </Compile>
     <Compile Include="formsEstudiantes\frmMenuEstudiante.cs">
       <SubType>Form</SubType>
@@ -81,8 +105,20 @@
     <EmbeddedResource Include="formsCoordinador\frmMenuCoordinador.resx">
       <DependentUpon>frmMenuCoordinador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsDirector\Convenios\frmEditarConvenioExistente.resx">
+      <DependentUpon>frmEditarConvenioExistente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsDirector\Convenios\frmGestionarConvenios.resx">
+      <DependentUpon>frmGestionarConvenios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsDirector\Convenios\frmRegistrarConvenio.resx">
+      <DependentUpon>frmRegistrarConvenio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsDirector\frmMenuDirector.resx">
       <DependentUpon>frmMenuDirector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsDirector\Proyectos\frmAsignarProyecto.resx">
+      <DependentUpon>frmAsignarProyecto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsEstudiantes\frmMenuEstudiante.resx">
       <DependentUpon>frmMenuEstudiante.cs</DependentUpon>
