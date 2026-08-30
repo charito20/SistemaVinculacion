@@ -27,5 +27,45 @@ namespace SistemaVinculacion.formsCoordinador
             frmLogin login = new frmLogin();
             login.Show();
         }
+
+        private void frmMenuCoordinador_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDocumentacion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDocumentacionCoordinador DocumentacionCoordinador = new frmDocumentacionCoordinador(usuarioLogueado);
+            DocumentacionCoordinador.Show();
+        }
+
+        private void btnProyectos_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmProyectos ProyectosCoordinador = new FrmProyectos(usuarioLogueado);
+            ProyectosCoordinador.Show();
+        }
+
+        private void btnDocentes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDocentes DocentesCoordinador = new frmDocentes(usuarioLogueado);
+            DocentesCoordinador.Show();
+        }
+
+        private void btnEstudiantes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmEstudiantes EstudiantesCoordinador = new frmEstudiantes(usuarioLogueado);
+            EstudiantesCoordinador.Show();
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmReporteCoodinador ReporteCoordinador = new frmReporteCoodinador(usuarioLogueado);
+            ReporteCoordinador.Show();
+        }
     }
 }
